@@ -1,31 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JM Viagens - Contato</title>
     <meta charset="UTF-8" />
+    <title>JM Viagens - Contato</title>
 </head>
 <body>
-    <table border="1" width="900" align="center">
-        <td><img src="imagens/contato.png"/> </td>
-        <td align="right">
-            <a href="index.html">Home</a>
-            <a href="quem-somos.html">Quem somos</a>
-            <a href="contato.html">Contato</a>
-            <img src="imagens/principal.png" />
-
-            <p>E-mail:jmviagens@jmviagens.com.br</p>
-            <p>Lorem Ipsum é simplesmente texto fictício da indústria de impressão e digitação. Lorem Ipsum tem sido o texto fictício padrão da indústria desde o século XVI, 
-                quando uma impressora desconhecida pegou uma cozinha de tipo e a embaralhou para fazer um livro de espécimes de tipo.
-            </p>
-            <p>Existem muitas variações de passagens de Lorem Ipsum disponíveis, mas a maioria sofreu alterações de alguma forma, por humor injetado, ou palavras randomizadas que não parecem nem um pouco críveis. Se você vai usar uma passagem de Lorem Ipsum, 
-                você precisa ter certeza de que não há nada embaraçoso escondido no meio do texto.
-            </p>
-        </td>
-    </table>
     <table border="0" width="900" align="center">
-        <h4>Todos os direitos reservados</h4>
+        <tr>
+            <td><img src="imagens/logo.png" /></td>
+            <td align="right">
+                <a href="index.html">Home</a> | 
+                <a href="quem-somos.html">Quem somos</a> | 
+                <a href="destinos.html">Destinos</a> | 
+                <a href="busca.html">Buscar Pacotes</a> | 
+                <a href="contato.html">Contato</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <img src="imagens/contato.png" />
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <h3>E-mail: jmviagens@jmviagens.com.br</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                
+                <form action="#" method="POST">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td width="100">Nome:</td>
+                            <td><input type="text" name="nome" size="40" required /></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail:</td>
+                            <td><input type="email" name="email" size="40" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Assunto:</td>
+                            <td><input type="text" name="assunto" size="40" /></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Mensagem:</td>
+                            <td><textarea name="mensagem" rows="5" cols="38" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Enviar" />
+                                <input type="reset" value="Limpar" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <h4>Todos os direitos reservados</h4>
+            </td>
+        </tr>
     </table>
 </body>
 </html>
