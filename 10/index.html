@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Cards de Notícias</title>
+    <style>
+        nav {
+            background: #EEE685;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        a:link {
+            color: #b9c941;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #458B00;
+        }
+        a:hover {
+            color: #8B4726;
+        }
+        a:active {
+            color: #FF1493;
+        }
+        a {
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .noticias-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .card-noticia {
+            background-color: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            width: calc(50% - 10px);
+            box-sizing: border-box;
+            padding: 15px;
+            overflow: hidden;
+        }
+        @media (max-width: 600px) {
+            .card-noticia {
+                width: 100%;
+            }
+        }
+
+        .card-noticia header {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .portal-infomoney { color: #b57a22; }
+        .portal-cnn { color: #cc0000; }
+        .portal-terra { color: #ff7f00; }
+        .portal-g1 { color: #cc0000; }
+
+        .card-noticia h2 {
+            font-size: 16px;
+            color: #333333;
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+
+        .card-noticia img {
+            float: right;
+            width: 100px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-left: 15px;
+            margin-bottom: 5px;
+        }
+
+        .card-noticia footer {
+            clear: both;
+            font-size: 12px;
+            color: #777777;
+            padding-top: 10px;
+        }
+
+        .rodape-pagina {
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.techtudo.com.br/">Tech Tudo</a>
+        <a href="http://www.maujor.com">Maujor</a>
+    </nav>
+
+    <main class="noticias-container">
+
+        <article class="card-noticia">
+            <img src="https://picsum.photos/id/10/100/75" alt="Imagem Ilustrativa Seca">
+            <header class="portal-infomoney">InfoMoney</header>
+            <h2>Preços no mercado livre operam próximos à estabilidade apesar de seca...</h2>
+            <footer>2 horas atrás</footer>
+        </article>
+
+        <article class="card-noticia">
+            <img src="https://picsum.photos/id/12/100/75" alt="Imagem Ilustrativa Nobel">
+            <header style="color: #004b87;">CNN Brasil</header>
+            <h2>Nobel da Paz: conheça nomes cotados para o prêmio deste ano, que será conhecido nest...</h2>
+            <footer>3 horas atrás</footer>
+        </article>
+
+        <article class="card-noticia">
+            <img src="https://picsum.photos/id/15/100/75" alt="Imagem Ilustrativa Três Poderes">
+            <header class="portal-cnn">CNN</header>
+            <h2>Três Poderes jamais devem avançar sobre "competências alheias", diz Arthur Lira</h2>
+            <footer>4 horas atrás</footer>
+        </article>
+
+        <article class="card-noticia">
+            <img src="https://picsum.photos/id/26/100/75" alt="Imagem Ilustrativa Japão">
+            <header style="color: #0072c6; font-style: italic;">R7.COM</header>
+            <h2>Japão inicia segunda fase de despejo de água da central nuclear de Fukushima</h2>
+            <footer>7 horas atrás</footer>
+        </article>
+
+    </main>
+
+    <footer class="rodape-pagina">
+        <p>Postado por: Wian Fernando</p>
+        <p>Contato: <a href="mailto:wian@gmail.com">wian@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
