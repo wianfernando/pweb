@@ -1,16 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tag Article Section Time Aside</title>
-</head>
-<body>
-    <article>
-        <h4>Artigo 01</h4>
 
-        <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo quando estiver examinando sua diagramação</p>
-        <span>Atualizado em:<time datetime= "2017-07-12">12/07/2017</time></span>
+    <style>
+
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#e6e6e6;
+        }
+
+        header{
+            background:#0b7a6d;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        section{
+            width:70%;
+            float:left;
+            margin:20px;
+        }
+
+        article{
+            background:white;
+            border:1px solid #ccc;
+            padding:15px;
+            margin-bottom:20px;
+            overflow:hidden;
+        }
+
+        article h2{
+            color:#7da428;
+            margin-bottom:5px;
+        }
+
+        time{
+            color:#666;
+            font-size:14px;
+        }
+
+        article img{
+            width:180px;
+            height:120px;
+            float:left;
+            margin-right:15px;
+        }
+
+        article p{
+            text-align:justify;
+            line-height:1.5;
+        }
+
+        aside{
+            width:20%;
+            float:right;
+            background:white;
+            border:1px solid #ccc;
+            margin:20px;
+            padding:15px;
+        }
+
+        aside img{
+            width:100%;
+        }
+
+        footer{
+            clear:both;
+            background:#0b7a6d;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Portal de Notícias</h1>
+</header>
+
+<section>
+
+    <article>
+
+        <h2>Novas árvores são plantadas em praça da cidade</h2>
+
+        <time datetime="2026-06-26">
+            Postado em 26 de junho de 2026
+        </time>
+
+        <br><br>
+
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="Praça">
+
+        <p>
+            A prefeitura realizou uma ação de arborização em uma das principais praças da cidade.
+            Moradores e estudantes participaram do plantio de novas mudas para contribuir com a
+            preservação do meio ambiente e melhorar os espaços públicos.
+        </p>
+
+        <p><strong>Postado por:</strong> Fernando</p>
+
     </article>
+
+    <article>
+
+        <h2>Escola promove feira cultural</h2>
+
+        <time datetime="2026-06-24">
+            Postado em 24 de junho de 2026
+        </time>
+
+        <br><br>
+
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="Feira Cultural">
+
+        <p>
+            A escola realizou uma feira cultural com apresentações de música, dança e exposições
+            de trabalhos produzidos pelos alunos. O evento reuniu professores, estudantes e
+            familiares, fortalecendo a integração da comunidade escolar.
+        </p>
+
+        <p><strong>Postado por:</strong> Wian Oliveira</p>
+
+    </article>
+
+</section>
+
+<aside>
+
+    <h3>Publicidade</h3>
+
+    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=600" alt="Publicidade">
+
+    <p>
+        Espaço reservado para anúncios e informações importantes.
+    </p>
+
+</aside>
+
+<footer>
+    Portal de Notícias - 2026
+</footer>
+
 </body>
 </html>
