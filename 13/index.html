@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS3</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <style>
+        .sem-box-sizing {
+            width: 300px;
+            height: 140px;
+            padding: 15px;
+            border: 5px solid #000;
+            background: #b9c941;
+            margin: 10px;
+        }
+
+        .com-box-sizing {
+            width: 300px;
+            height: 140px;
+            padding: 15px;
+            border: 5px solid #000;
+            background: #4dadf7;
+            margin: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sem Box-Sizing</h2>
+    <div class="sem-box-sizing"></div>
+
+    <h2>Com Box-Sizing</h2>
+    <div class="com-box-sizing"></div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS3</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <style>
+        .conteudo {
+            margin: 40px;
+        }
+
+        .bloco {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin-right: 40px;
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .cor-1 { background-color: #e50000; }
+        .cor-2 { background-color: #ffaa00; }
+        .cor-3 { background-color: #008f11; }
+        .cor-4 { background-color: #800080; }
+
+
+        .flor .q1 { border-radius: 100px 0 0 100px; }
+        .flor .q2 { border-radius: 100px 100px 0 0; }
+        .flor .q3 { border-radius: 0 0 100px 100px; }
+        .flor .q4 { border-radius: 0 100px 100px 0; }
+
+        
+        .circulo .q1 { border-radius: 100px 0 0 0; }
+        .circulo .q2 { border-radius: 0 100px 0 0; }
+        .circulo .q3 { border-radius: 0 0 0 100px; }
+        .circulo .q4 { border-radius: 0 0 100px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="conteudo">
+        
+        <div class="bloco flor">
+            <div class="quadrado cor-1 q1"></div>
+            <div class="quadrado cor-2 q2"></div>
+            <div class="quadrado cor-3 q3"></div>
+            <div class="quadrado cor-4 q4"></div>
+        </div>
+
+        <div class="bloco circulo">
+            <div class="quadrado cor-1 q1"></div>
+            <div class="quadrado cor-2 q2"></div>
+            <div class="quadrado cor-3 q3"></div>
+            <div class="quadrado cor-4 q4"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
