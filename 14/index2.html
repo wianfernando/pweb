@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Sombra</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:#eef4f7;
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            margin-top:80px;
+        }
+
+        .box{
+            width:350px;
+            height:180px;
+            border-radius:5px;
+            border:2px dashed rgba(255,255,255,.7);
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:22px;
+        }
+
+        .shadow1{
+            background:#e79a97;
+            box-shadow:15px 15px 12px rgba(0,0,0,.35);
+        }
+
+        .shadow2{
+            background:#f3ea8b;
+            box-shadow:0px 0px 20px rgba(0,0,0,.35);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box shadow1">
+        Shadow 1
+    </div>
+
+    <div class="box shadow2">
+        Shadow 2
+    </div>
+
+</body>
+</html>
